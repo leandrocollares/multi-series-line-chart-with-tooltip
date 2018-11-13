@@ -1,0 +1,171 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/open-sans-v15-latin-regular.woff2') format('woff2'),
+       url('../fonts/open-sans-v15-latin-regular.woff') format('woff'), 
+       url('../fonts/open-sans-v15-latin-regular.ttf') format('truetype'); 
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/open-sans-v15-latin-700.woff2') format('woff2'),
+       url('../fonts/open-sans-v15-latin-700.woff') format('woff'),
+       url('../fonts/open-sans-v15-latin-700.ttf') format('truetype');
+}
+
+body {
+  font-family: 'Open Sans', sans-serif; 
+  color: #333333;
+}
+
+#intro {
+  position: relative;
+  height: auto;
+  padding: 5px;
+  margin: 0 0 0 15px;
+}
+
+#intro h1 {
+  color: #333333;
+  margin: auto;
+  font-size: 17px; 
+  font-weight: 700;
+  line-height: 1.5em; 
+}
+
+#intro p {
+  color: #333333;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5em;
+  max-width: 870px;
+}
+
+.axis text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 400;  
+}
+
+.axis path {
+  stroke: #a5a5a5;
+}
+
+.axis text{
+  fill: #a5a5a5;
+}
+
+.tick line {
+  stroke: #a5a5a5;
+}
+
+.airports {
+  color: #333333;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.line {
+  fill: none;
+  stroke-width: 1.5px;
+}
+
+.focus line {
+  stroke: #333333;
+  stroke-dasharray: 1,6;
+  stroke-width: 3;
+  fill: none;
+}
+
+.overlay {
+  fill: none;
+  pointer-events: all;
+}
+
+#tooltip {
+  position: absolute;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  margin: 250px 0 0px 500px;
+  background-color: white;
+  pointer-events: none;
+  z-index: 1000;
+  visibility: visible;
+  opacity: 1;
+  transition: visibility .5s, opacity .5s linear;
+}
+
+#tooltip.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+#tooltip p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+
+#time {
+  color: #333333;
+  font-weight: 700;
+}
+
+#info {
+  padding: 1px 2px 2px 1px;
+  margin-right: 3px;
+}
+
+.springbankLabel {
+  color: #440154;
+  font-weight: 400;
+}
+
+.calgaryLabel {
+  color: #22a784;
+  font-weight: 400;
+}
+
+#source {
+  position: relative;
+  height: auto;
+  padding: 5px;
+  margin: 0 0 0 15px;
+}
+
+#source p {
+  color: #333333;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5em;
+  max-width: 870px;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+}
+
+a:link {
+  color: #dd4968;
+}
+
+a:visited {
+  color: #dd4968;
+}
+
+a:focus {
+  border-bottom: 1px dotted;  
+}
+
+a:hover {
+  border-bottom: 1px dotted;     
+}
+
+a:active {
+  color: #8c2980;
+}

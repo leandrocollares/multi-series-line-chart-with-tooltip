@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+   <meta charset="utf-8">
+   <title>Multi-series line chart with tooltip</title>
+
+   <link href="css/style.css" rel="stylesheet" type="text/css">
+
+   <script src="js/d3.v4.min.js"></script>
+</head>
+<body>   
+   <div id="intro">
+      <h1>A chinook causes large temperatures variations in Calgary</h1>
+      <p> Temperatures measured by weather stations at the Calgary International Airport and at the Springbank Airport on 22 November 2017. At 6 in the morning it was 18.3°C warmer at the Springbank Airport. The two airports are approximately 25km apart.</p>
+      
+   </div>
+   <div>
+      <span id="tooltip" class="hidden">
+         <p><span id="time">hour.minute</span></p>
+         <p><span id="temperature">0</span></p>
+      </span>
+   </div>
+   <div>
+      <svg id="chart" width="870" height="430"></svg>
+   </div> 
+   <div id="source">
+      <p>Sources: <a href="http://climate.weather.gc.ca/historical_data/search_historic_data_stations_e.html?searchType=stnName&timeframe=1&txtStationName=calgary&searchMethod=contains&StartYear=1840&EndYear=2018&optLimit=specDate&Year=2017&Month=11&Day=22&selRowPerPage=25" target="_blank">Government of Canada &#183; Historical Climate Data</a> and <a href="http://www.cbc.ca/news/canada/calgary/calgary-morning-weather-nov-22-2017-temperature-swings-1.4413832" target="_blank">CBC</a>.</p>
+   </div>   
+   <script src="js/lineChart.js"></script>  
+</body>   
+</html>
